@@ -1,0 +1,12 @@
+.box{
+    background-image: conic-gradient(red 0deg, red 30deg, green 30deg,green 360deg);
+    border: 2px solid #000;
+    border-radius: 500px;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+.box li{
+    list-style: none;
+    margin: 40px;
+}
