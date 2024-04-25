@@ -33,7 +33,7 @@ const [loginData, setLoginData] = useState({
       );
       if (response.status === 200) {
         alert("Login successful!");
-        navigate("https://deploy-mern-api.vercel.app/teacher/dashboard");
+        navigate("/teacher/dashboard");
       } else {
         setError("Login failed. Please check your credentials.");
       }
@@ -56,7 +56,7 @@ const [loginData, setLoginData] = useState({
 
                                         <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                                         <p class="text-white-50 mb-5">Please enter your ID and password!</p>
-                                        <form method='post' action='https://deploy-mern-api.vercel.app/teacher/dashboard' onSubmit={handleLogin} >
+                                        <form method='post' action='/teacher/dashboard' onSubmit={handleLogin} >
                                             <div class="form-outline form-white mb-4">
                                                 <label class="form-label" >Teacher ID</label>
 

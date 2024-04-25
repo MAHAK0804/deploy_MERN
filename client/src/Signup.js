@@ -33,8 +33,8 @@ export default function Signup() {
             mail: input.mail
 
         }
-        axios.post('https://vidhyaghar-project-api.vercel.app/Signup', details);
-        navigate("https://vidhyaghar-project-api.vercel.app/Adminlogin");
+        axios.post('https://deploy-mern-api.vercel.app/Signup', details);
+        navigate("/");
 
     };
 
@@ -51,7 +51,7 @@ export default function Signup() {
 
                                         <h2 class="fw-bold mb-2 text-uppercase">Signup</h2>
                                         <p class="text-white-50 mb-5">Please enter your details</p>
-                                        <form method='post' action='https://vidhyaghar-project-api.vercel.app/Signup'>
+                                        <form method='post' action='/'>
                                             <div class="form-outline form-white mb-4">
                                                 <label class="form-label" for="typeEmailX">Admin Username</label>
 

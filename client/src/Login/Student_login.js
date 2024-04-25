@@ -30,7 +30,7 @@ export default function Student_login() {
           );
           if (response.status === 200) {
             alert("Login successful!");
-            navigate("https://deploy-mern-api.vercel.app/");
+            navigate("/");
           } else {
             setError("Login failed. Please check your credentials.");
           }
@@ -53,7 +53,7 @@ export default function Student_login() {
 
                                         <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                                         <p class="text-white-50 mb-5">Please enter your ID and password!</p>
-                                        <form method='post' action='https://deploy-mern-api.vercel.app/' onSubmit={handlestudent} >
+                                        <form method='post' action='/' onSubmit={handlestudent} >
                                             <div class="form-outline form-white mb-4">
                                                 <label class="form-label" for="typeEmailX">Student ID</label>
 
