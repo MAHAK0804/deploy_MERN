@@ -37,8 +37,8 @@ export default function Contactus() {
       message:input.message,
 
     }
-    axios.post('https://vidhyaghar-project-api.vercel.app/Contact',details)
-    navigate("https://vidhyaghar-project-api.vercel.app/");
+    axios.post('https://deploy-mern-api.vercel.app/Contact',details)
+    navigate("https://deploy-mern-api.vercel.app/");
 
   }
  
@@ -81,7 +81,7 @@ export default function Contactus() {
         <br />
         <div class='container'>
 
-      <form class="row g-3 needs-validation"  method='post' validate action='http://localhost:3000/Contact'>
+      <form class="row g-3 needs-validation"  method='post' validate action='https://deploy-mern-api.vercel.app/Contact'>
   <div class="col-md-6">
     <label for="validationCustom01" class="form-label">Name</label>
     <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Your Name" name="name" value={input.name}  onChange={handleChange} required />

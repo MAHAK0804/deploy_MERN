@@ -28,12 +28,12 @@ const [loginData, setLoginData] = useState({
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://vidhyaghar-project-api.vercel.app/Teacherslogin",
+        "https://deploy-mern-api.vercel.app/Teacherslogin",
         loginData
       );
       if (response.status === 200) {
         alert("Login successful!");
-        navigate("https://vidhyaghar-project-api.vercel.app/teacher/dashboard");
+        navigate("https://deploy-mern-api.vercel.app/dashboard");
       } else {
         setError("Login failed. Please check your credentials.");
       }
@@ -56,7 +56,7 @@ const [loginData, setLoginData] = useState({
 
                                         <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                                         <p class="text-white-50 mb-5">Please enter your ID and password!</p>
-                                        <form method='post' action='http://localhost:3000/teacher/dashboard' onSubmit={handleLogin} >
+                                        <form method='post' action='https://deploy-mern-api.vercel.app/dashboard' onSubmit={handleLogin} >
                                             <div class="form-outline form-white mb-4">
                                                 <label class="form-label" >Teacher ID</label>
 

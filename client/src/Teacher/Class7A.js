@@ -14,7 +14,7 @@ function Class7A() {
 
   const fetchStudents = async () => {
     try {
-      const response = await axios.get('https://vidhyaghar-project-api.vercel.app/teacher/Class-7A');
+      const response = await axios.get('https://deploy-mern-api.vercel.app/Class-7A');
       setStudents(response.data);
     } catch (error) {
       console.error('Error fetching students:', error);
@@ -24,7 +24,7 @@ function Class7A() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://vidhyaghar-project-api.vercel.app/teacher/Class-7A', { isAbsent, isPresent });
+      await axios.post('https://deploy-mern-api.vercel.app/Class-7A', { isAbsent, isPresent });
       alert('Attendance marked successfully!');
       setIsAbsent(false);
       setIsPresent(false);
